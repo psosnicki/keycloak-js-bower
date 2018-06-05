@@ -469,6 +469,11 @@ declare namespace Keycloak {
 		clearToken(): void;
 
 		/**
+		 * Set token manually
+		 */
+		setToken(token, refreshToken, idToken, timeLocal): void;
+
+		/**
 		 * Returns true if the token has the given realm role.
 		 * @param role A realm role name.
 		 */

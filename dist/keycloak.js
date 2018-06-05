@@ -510,6 +510,10 @@
                 }
             }
         }
+        
+        kc.setToken = function (token, refreshToken, idToken, timeLocal) {
+            setToken(token, refreshToken, idToken, timeLocal);
+        }
 
         function getRealmUrl() {
             if (typeof kc.authServerUrl !== 'undefined') {
